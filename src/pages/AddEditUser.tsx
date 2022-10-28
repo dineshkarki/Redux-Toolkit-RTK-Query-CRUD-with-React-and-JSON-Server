@@ -22,11 +22,11 @@ const AddEditUser = () => {
 
   const {data, error, isFetching, isLoading} = useContactQuery(id!);
 
-  useEffect(() => {
-    if(error) {
-      toast.error("Something went wrong !");
-    }
-  }, [error]);
+  // useEffect(() => {
+  //   if(error) {
+  //     toast.error("Something went wrong !");
+  //   }
+  // }, [error]);
 
   useEffect(() => {
     if (id) {
@@ -63,7 +63,8 @@ const AddEditUser = () => {
     setFormValue({ ...formValue, [name]: value });
   };
   return (
-    <div style={{ marginTop: "100px" }}>
+    <div style={{ marginTop: "100px" }} className="addEditContainer">
+      <h3>{id ? "Edit Contact Details" : "Add Contact Details"}</h3>
       <form
         style={{
           margin: "auto",

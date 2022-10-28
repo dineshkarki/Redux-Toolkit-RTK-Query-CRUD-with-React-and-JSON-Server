@@ -1,7 +1,7 @@
 {
   "contacts": [
     {
-      "name": "Adam updated",
+      "name": "Adam",
       "email": "adam123@gmail.com",
       "contact": "1234567890",
       "id": 1
@@ -9,7 +9,7 @@
     {
       "name": "Tom Cruise",
       "email": "tom@gmail.com",
-      "contact": "83786646476",
+      "contact": "1234567890",
       "id": 2
     },
     {
@@ -19,15 +19,15 @@
       "id": 3
     },
     {
-      "name": "test",
-      "email": "test@123.com",
-      "contact": "1234567890",
+      "name": "Dinesh Kumar K",
+      "email": "dinesh@gmail.com",
+      "contact": "9626176886",
       "id": 4
     },
     {
-      "name": "mukesh",
-      "email": "mks",
-      "contact": "7990906654",
+      "name": "Nandhini D",
+      "email": "nms@gmail.com",
+      "contact": "9786975778",
       "id": 5
     }
   ]

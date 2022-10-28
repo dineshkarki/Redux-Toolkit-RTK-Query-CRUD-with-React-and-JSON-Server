@@ -20,22 +20,36 @@ const UserInfo = () => {
           <p>User Contact Detail</p>
         </div>
         <div className="container">
-          <strong>ID: </strong>
-          <span>{id}</span>
-          <br />
-          <br />
-          <strong>Name: </strong>
-          <span>{data && data.name}</span>
-          <br />
-          <br />
-          <strong>Email: </strong>
-          <span>{data && data.email}</span>
-          <br />
-          <br />
-          <strong>Contact: </strong>
-          <span>{data && data.contact}</span>
-          <br />
-          <br />
+          <table>
+            <tr>
+              <td>
+                  <b>ID:</b>
+              </td>
+              <td>
+                {id}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b>Name :</b>
+              </td>
+              <td>{data && data.name}</td>
+            </tr>
+            <tr>
+              <td>
+                <b>Email:</b>
+              </td>
+              <td>
+                {data && data.email}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b>Contact:</b>
+              </td>
+              <td>{data && data.contact}</td>
+            </tr>
+          </table>
           <Link to="/">
             <button className="btn btn-edit">Go Back</button>
           </Link>
