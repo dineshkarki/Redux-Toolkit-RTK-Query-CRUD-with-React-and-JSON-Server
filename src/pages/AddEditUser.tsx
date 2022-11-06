@@ -42,8 +42,8 @@ const AddEditUser = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    if (!name && !email && !contact) {
-      toast.error("Please provide value into each input field");
+    if (!name || !email || !contact) {
+      toast.error("Please provide the value into each input field...");
     } else {
       if (!editMode) {
         await addContact(formValue);

@@ -17,7 +17,7 @@ const Home = () => {
   const handleDelete = async (id: any) => {
     if (window.confirm("Are you sure that you wanted to delete that user ?")) {
       await deleteContact(id);
-      toast.success("Contact Deleted Successfully");
+      toast.error("Contact Deleted Successfully");
     }
   };
   return (
